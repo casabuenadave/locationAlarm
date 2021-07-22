@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon name="locate-outline"></ion-icon>
+      Map Alarm
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Map Alarm</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  
+
+  <div id="container">
+    <ion-button color='dark' expand='block'(click)="print()" [routerLink]="['/saved-alarm']" >SAVED ALARM</ion-button>
+    <ion-button color='dark' expand='block'(click)="print()" [routerLink]="['/set-alarm']" >SET ALARM</ion-button>
+  
+  <br>
+  <br>
+  <br>
+
+  <ion-button color='dark' expand='block'(click)="print()" [routerLink]="['/activate-alarm']" >ACTIVATE ALARM</ion-button>
+  <ion-button color='dark' expand='block'(click)="print()" [routerLink]="['/deactivate-alarm']" >DEACTIVATE ALARM</ion-button>
+
+  <br>
+  <br>
+  <br>
+ 
+    <ion-button color='dark'sqaure="round"(click)="print()" [routerLink]="['/coordinates']">COORDINATES</ion-button>
+
+    <br>
+    <br>
+    <br>
+
+    <ion-toolbar>
+      <ion-button slot="start" size="large" fill="clear" color="dark" text="Logout" href="./home">
+        <ion-button expand="block" fill="clear" color="transparent"><ion-icon name="log-out-outline"></ion-icon> LOGOUT</ion-button>
+      </ion-button>
+      
+    </ion-toolbar>
+
+  </div> 
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-footer>
+
+
+
+

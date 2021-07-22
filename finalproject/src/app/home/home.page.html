@@ -1,0 +1,25 @@
+
+<ion-content class='ion-padding ion-test-center'>
+
+
+
+<div class="logo">
+ <img src='https://www.androidfreeware.net/software_images/milwus-location-alarm.1.png'>
+</div>
+
+<div class="form">
+  <ion-item lines='none'>
+    <ion-input type="email" [(ngModel)]="form.email_address"placeholder='EnterEmail'> </ion-input>
+  </ion-item>
+
+  <ion-item lines='none'>
+    <ion-input type="password" [(ngModel)]="form.password"placeholder='Password'> </ion-input>
+  </ion-item>
+
+  <ion-button color='dark' expand='block'(click)="print()" [routerLink]="['/homepage']" >Login</ion-button>
+  </div>
+  <ion-title class="ion-text-center" style="padding-top:15px; font-size: 15px;">or Connect With Social Media</ion-title>
+
+  <ion-button expand="block" fill="clear" color="transparent"><ion-icon name="logo-google"></ion-icon> Sign in with Google</ion-button>
+  <ion-button expand="block" fill="clear" color="transparent"><ion-icon name="logo-facebook"></ion-icon> Sign in with Facebook</ion-button>
+</ion-content>
